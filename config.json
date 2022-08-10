@@ -1,0 +1,9 @@
+{
+    "buffCoef1": 0.3,
+    "buffCoef2": 0.6,
+    "buffCoef3": 4.0,
+    "buffCoef4": 8.0,
+    "buffCoef5": 12.0,
+    "shiftBuff": 1,
+    "spaceBuff": 3
+}
