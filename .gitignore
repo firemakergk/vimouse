@@ -1,0 +1,10 @@
+/dist
+# __pycache__/
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
