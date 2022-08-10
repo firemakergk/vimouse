@@ -285,7 +285,7 @@ class VimouseUI(QMainWindow):
         self.pushButton.setText(QCoreApplication.translate("Dialog", "启 动", None))
         self.pushButton_2.setText(QCoreApplication.translate("Dialog", "支持作者", None))
         self.pushButton_4.setText(QCoreApplication.translate("Dialog", "提交配置", None))
-        self.label_2.setText(QCoreApplication.translate("Dialog", "<a href='https://www.baidu.com/'>关于Vimouse</a>", None))
+        self.label_2.setText(QCoreApplication.translate("Dialog", "<a href='https://github.com/firemakergk/vimouse'>关于Vimouse</a>", None))
         # self.label_3.setText(QCoreApplication.translate("Dialog", u"<a href='https://www.baidu.com/'>官方网站</a>", None))
     # retranslateUi
 
@@ -331,7 +331,7 @@ class VimouseUI(QMainWindow):
     
     
     def openDonatePage(self):
-        QDesktopServices.openUrl(QUrl("https://www.baidu.com/"))
+        QDesktopServices.openUrl(QUrl("https://github.com/firemakergk/vimouse"))
     
     def submitConfig(self):
         if (self.shiftLineEdit.text() not in BUFF_SET or self.LineEdit_2.text() not in BUFF_SET
