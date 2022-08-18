@@ -1,6 +1,6 @@
 ![vimouse](logo_small.png)
 
-## 让你在键盘上使用vim键位直接操纵鼠标。
+## 让你在键盘上使用vim键位直接操纵鼠标。 Control mouse with vim hot keys.
 
 ### 使用方法：
 ![vimouse](screenshot.jpg)
@@ -20,6 +20,22 @@ v：敲击一次视为左键按下，再敲击一次视为左键抬起。
 y:ctrl-c c:ctrl-x p:ctrl-v u:ctrl-z  
 
 希望能帮到你:)
+
+Press alt+\ to enable mouse controlling mode after started.
+
+move： h(←),j(↓),k(↑),l(→)
+
+move speed： 1/2/3/4/5/left shift/apace. Enabled when press down, disabled when loose up.The speed of mouse will effected by speed keys due to different vlaues of coefficient.
+
+click： i/e(left key),o/w(right key),d(middle key).
+
+scroll： r(roll up),f(roll down)
+
+function keys：
+v：click once for mouse left down. click another once for mouse left up.  
+y:ctrl-c c:ctrl-x p:ctrl-v u:ctrl-z  
+
+Hope it helps :)
 
 * * *
 ### 如果你觉得不错，那就请我喝杯咖啡吧~

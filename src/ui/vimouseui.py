@@ -248,39 +248,39 @@ class VimouseUI(QMainWindow):
     # setupUi
 
     def retranslateUi(self, Dialog,configData):
-        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Dialog", None))
-        self.Label.setText(QCoreApplication.translate("Dialog", u"\u5f00\u542f/\u5173\u95ed", None))
-        self.LineEdit.setText(QCoreApplication.translate("Dialog", u"alt + \\", None))
-        self.label1.setText(QCoreApplication.translate("Dialog", u"\u6863\u4f4d1\u7cfb\u6570\uff1a", None))
-        self.lineEdit1.setText(QCoreApplication.translate("Dialog", str(configData.get('buffCoef1')), None))
-        self.label2.setText(QCoreApplication.translate("Dialog", u"\u6863\u4f4d2\u7cfb\u6570\uff1a", None))
-        self.lineEdit2.setText(QCoreApplication.translate("Dialog", str(configData.get('buffCoef2')), None))
-        self.label3.setText(QCoreApplication.translate("Dialog", u"\u6863\u4f4d3\u7cfb\u6570\uff1a", None))
-        self.lineEdit3.setText(QCoreApplication.translate("Dialog", str(configData.get('buffCoef3')), None))
-        self.label4.setText(QCoreApplication.translate("Dialog", u"\u6863\u4f4d4\u7cfb\u6570", None))
-        self.lineEdit4.setText(QCoreApplication.translate("Dialog", str(configData.get('buffCoef4')), None))
-        self.label5.setText(QCoreApplication.translate("Dialog", u"\u6863\u4f4d5\u7cfb\u6570\uff1a", None))
-        self.lineEdit5.setText(QCoreApplication.translate("Dialog", str(configData.get('buffCoef5')), None))
-        self.shiftLabel.setText(QCoreApplication.translate("Dialog", u"shift\u6863\u4f4d\uff1a", None))
-        self.shiftLineEdit.setText(QCoreApplication.translate("Dialog", str(configData.get('shiftBuff')), None))
-        self.Label_2.setText(QCoreApplication.translate("Dialog", u"\u7a7a\u683c\u952e\u6863\u4f4d\uff1a", None))
-        self.LineEdit_2.setText(QCoreApplication.translate("Dialog", str(configData.get('spaceBuff')), None))
-        self.textBrowser_2.setHtml(QCoreApplication.translate("Dialog", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"</style></head><body style=\" font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u542f\u52a8\u76d1\u542c\u540e\uff0c\u5373\u53ef\u4f7f\u7528alt+\\\u5feb\u6377\u952e\u5f00\u542f\u9f20\u6807\u64cd\u7eb5\u6a21\u5f0f\u3002\u63a7\u5236\u952e\u4f4d\u4e0evim\u4e00\u81f4\u3002</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u79fb\u52a8\uff1a h(\u2190),j(\u2193),k(\u2191),l(\u2192)</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text"
-                        "-indent:0px;\">\u79fb\u52a8\u6863\u4f4d\uff1a \u4e3b\u952e\u76d81/2/3/4/5/\u5de6shift/\u7a7a\u683c\u952e\u3002\u6309\u4e0b\u751f\u6548\uff0c\u62ac\u8d77\u5931\u6548\u3002\u751f\u6548\u65f6\u9f20\u6807\u7684\u79fb\u52a8\u901f\u7387\u4f1a\u4ee5\u76f8\u5e94\u7684\u7cfb\u6570\u589e\u51cf\u3002</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u70b9\u51fb\uff1a i/e(\u5de6\u952e),o/w(\u53f3\u952e),d(\u4e2d\u952e)\u3002\u6309\u4e0b\u4e0e\u62ac\u8d77\u5bf9\u5e94\u76f8\u5e94\u6309\u952e\u7684\u6309\u4e0b\u4e0e\u62ac\u8d77\u3002</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u6eda\u8f6e\uff1a r(\u5411\u4e0a\u6eda\u52a8),f(\u5411\u4e0b\u6eda\u52a8)</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u529f\u80fd\u952e\uff1a</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-"
-                        "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">v\uff1a\u6572\u51fb\u4e00\u6b21\u89c6\u4e3a\u5de6\u952e\u6309\u4e0b\uff0c\u518d\u6572\u51fb\u4e00\u6b21\u89c6\u4e3a\u5de6\u952e\u62ac\u8d77\u3002</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">y:ctrl-c c:ctrl-x p:ctrl-v u:ctrl-z</p></body></html>"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">希望能帮到你:)</p>\n", None))
+        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", "Vimouse", None))
+        self.Label.setText(QCoreApplication.translate("Dialog", "开启/关闭", None))
+        self.LineEdit.setText( "alt + \\")
+        self.label1.setText(QCoreApplication.translate("Dialog", "档位1系数:", None))
+        self.lineEdit1.setText(str(configData.get('buffCoef1')))
+        self.label2.setText(QCoreApplication.translate("Dialog", "档位2系数:", None))
+        self.lineEdit2.setText(str(configData.get('buffCoef2')))
+        self.label3.setText(QCoreApplication.translate("Dialog", "档位3系数:", None))
+        self.lineEdit3.setText(str(configData.get('buffCoef3')))
+        self.label4.setText(QCoreApplication.translate("Dialog", "档位4系数:", None))
+        self.lineEdit4.setText(str(configData.get('buffCoef4')))
+        self.label5.setText(QCoreApplication.translate("Dialog", "档位5系数:", None))
+        self.lineEdit5.setText(str(configData.get('buffCoef5')))
+        self.shiftLabel.setText(QCoreApplication.translate("Dialog", "shift档位", None))
+        self.shiftLineEdit.setText(str(configData.get('shiftBuff')))
+        self.Label_2.setText(QCoreApplication.translate("Dialog", "空格键档位", None))
+        self.LineEdit_2.setText(str(configData.get('spaceBuff')))
+        self.textBrowser_2.setHtml(QCoreApplication.translate("Dialog", """<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n
+<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n
+p, li { white-space: pre-wrap; }\n
+hr { height: 1px; border-width: 0; }\n
+</style></head><body style=\" font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">启动监听后，即可使用alt+\\快捷键开启鼠标操纵模式。控制键位与vim一致。</p>\n
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">移动： h(←),j(↓),k(↑),l(→)</p>\n
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text"
+                        "-indent:0px;\">移动档位： 主键盘1/2/3/4/5/左shift/空格键。按下生效，抬起失效。生效时鼠标的移动速率会以相应的系数增减。</p>\n
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">点击： i/e(左键),o/w(右键),d(中键)。按下与抬起对应相应按键的按下与抬起。</p>\n
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">滚轮： r(向上滚动),f(向下滚动)</p>\n
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">功能键：</p>\n
+<p style=\" margin-top:0px; margin-bottom:0px; margin-"
+                        "left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">v：敲击一次视为左键按下，再敲击一次视为左键抬起。</p>\n
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">y:ctrl-c c:ctrl-x p:ctrl-v u:ctrl-z</p></body></html>
+<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">希望能帮到你:)</p>\n""", None))
         self.label.setText("")
         self.pushButton.setText(QCoreApplication.translate("Dialog", "启 动", None))
         self.pushButton_2.setText(QCoreApplication.translate("Dialog", "支持作者", None))
@@ -343,8 +343,8 @@ class VimouseUI(QMainWindow):
             or len(self.lineEdit5.text()) == 0 or len(self.lineEdit5.text()) > 4 or not PATTERN_BUFF.match(self.lineEdit5.text())
         ):
             QMessageBox.information(self, 
-                "提示", 
-                "档位系数必需是0~100的正整数或一位小数，shift与space对应的档位只能填写1~5",
+                QCoreApplication.translate("Dialog", "提示", None), 
+                QCoreApplication.translate("Dialog", "档位系数必需是0~100的正整数或一位小数，shift与space对应的档位只能填写1~5", None),
                 QMessageBox.Yes)
         else:
             configData = {}
@@ -357,8 +357,8 @@ class VimouseUI(QMainWindow):
             configData["spaceBuff"] = int(self.LineEdit_2.text())
             self.controller.submitConfig(configData)
             QMessageBox.information(self, 
-                "提示", 
-                "配置更新成功!",
+                QCoreApplication.translate("Dialog", "提示", None), 
+                QCoreApplication.translate("Dialog", "配置更新成功!", None),
                 QMessageBox.Yes)
             
     def cancelFocus(self):

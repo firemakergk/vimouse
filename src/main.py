@@ -2,7 +2,7 @@
 import pyautogui
 import sys
 from PySide6 import QtWidgets
-from PySide6.QtWidgets import *
+from PySide6.QtCore import QTranslator
 from ui.vimouseui import VimouseUI
 from controller.appcontroller import AppController
 
@@ -29,6 +29,9 @@ ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("Vimouse")
 if __name__ == '__main__':
     controller = AppController()
     app = QtWidgets.QApplication(sys.argv)
+    trans = QTranslator()
+    trans.load('vimouseui.qm')
+    app.installTranslator(trans)
     # app.setQuitOnLastWindowClosed(False)
     vimouseUI = VimouseUI(app,controller)
     controller.ui = vimouseUI
