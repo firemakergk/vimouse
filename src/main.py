@@ -29,9 +29,9 @@ ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("Vimouse")
 if __name__ == '__main__':
     controller = AppController()
     app = QtWidgets.QApplication(sys.argv)
-    trans = QTranslator()
-    trans.load('vimouseui.qm')
-    app.installTranslator(trans)
+    # trans = QTranslator()
+    # trans.load('ui/i18n/vimouseui.qm')
+    # app.installTranslator(trans)
     # app.setQuitOnLastWindowClosed(False)
     vimouseUI = VimouseUI(app,controller)
     controller.ui = vimouseUI

@@ -1,1 +1,6 @@
-F:\env\python\venv\vimmouse\Scripts\pyinstaller.exe --clean --noconfirm --onedir --windowed --add-data "F:/project/vimmouse/src/core;core/" --add-data "F:/project/vimmouse/src/controller;controller/" --add-data "F:/project/vimmouse/src/ui;ui/" --add-data "F:/project/vimmouse/src/utils;utils/" --paths "F:/env/python/venv/vimmouse/Lib/site-packages" --distpath "F:/project/vimmouse/dist/" --hidden-import=json --debug=imports "F:/project/vimmouse/src/main.py" 
+:: build for english
+F:\env\python\venv\vimmouse\Scripts\pyinstaller.exe --clean --noconfirm --onedir --windowed --name "vimouse" --icon "F:/project/vimouse/logo.ico" --add-data "F:/project/vimouse/src/core;core/" --add-data "F:/project/vimouse/src/controller;controller/" --add-data "F:/project/vimouse/src/ui;ui/" --add-data "F:/project/vimouse/src/utils;utils/" --paths "F:/env/python/venv/vimmouse/Lib/site-packages" --distpath "F:/project/vimouse/dist/en/" --hidden-import=json --debug=imports "F:/project/vimouse/src/main.py"
+
+:: build for chinese
+:: 修改main文件，去掉tranlaster相关的代码后执行下面的构建语句
+F:\env\python\venv\vimmouse\Scripts\pyinstaller.exe --clean --noconfirm --onedir --windowed --name "vimouse" --icon "F:/project/vimouse/logo.ico" --add-data "F:/project/vimouse/src/core;core/" --add-data "F:/project/vimouse/src/controller;controller/" --add-data "F:/project/vimouse/src/ui;ui/" --add-data "F:/project/vimouse/src/utils;utils/" --paths "F:/env/python/venv/vimmouse/Lib/site-packages" --distpath "F:/project/vimouse/dist/cn/" --hidden-import=json --debug=imports "F:/project/vimouse/src/main.py"

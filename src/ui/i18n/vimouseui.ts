@@ -4,6 +4,32 @@
 <context>
     <name>Dialog</name>
     <message>
+        <location filename="ui/vimouseui.py" line="37"/>
+        <location filename="ui/vimouseui.py" line="63"/>
+        <location filename="ui/vimouseui.py" line="308"/>
+        <source>启动运行</source>
+        <translation>Start</translation>
+    </message>
+    <message>
+        <location filename="ui/vimouseui.py" line="40"/>
+        <location filename="ui/vimouseui.py" line="55"/>
+        <location filename="ui/vimouseui.py" line="299"/>
+        <source>开启Vimouse</source>
+        <translation>enable mouse control</translation>
+    </message>
+    <message>
+        <location filename="ui/vimouseui.py" line="53"/>
+        <location filename="ui/vimouseui.py" line="297"/>
+        <source>停止运行</source>
+        <translation>Stop</translation>
+    </message>
+    <message>
+        <location filename="ui/vimouseui.py" line="59"/>
+        <location filename="ui/vimouseui.py" line="303"/>
+        <source>关闭Vimouse</source>
+        <translation>disable mouse control</translation>
+    </message>
+    <message>
         <location filename="ui/vimouseui.py" line="251"/>
         <source>Vimouse</source>
         <translation>Vimouse</translation>

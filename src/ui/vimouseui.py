@@ -34,10 +34,10 @@ class TrayIcon(QSystemTrayIcon):
         self.setIcon(self.iconEngaged)
         self.setVisible(True)
         self.menu = QMenu()
-        self.actionToggleEngaged = QAction(QIcon(''),"启动运行", self.menu)
+        self.actionToggleEngaged = QAction(QIcon(''),QCoreApplication.translate("Dialog", "启动运行", None), self.menu)
         self.actionToggleEngaged.triggered.connect(vimouseUI.toggleEngaged)
         self.menu.addAction(self.actionToggleEngaged)
-        self.actionToggleFiltering = QAction(QIcon(''),"开启Vimouse", self.menu)
+        self.actionToggleFiltering = QAction(QIcon(''),QCoreApplication.translate("Dialog", "开启Vimouse", None), self.menu)
         self.actionToggleFiltering.triggered.connect(vimouseUI.toggleFiltering)
         self.actionToggleFiltering.setDisabled(True)
         self.menu.addAction(self.actionToggleFiltering)
@@ -50,17 +50,17 @@ class TrayIcon(QSystemTrayIcon):
 
     def updateStatus(self, engaged,filtering):
         if engaged:
-            self.actionToggleEngaged.setText("停止运行")
+            self.actionToggleEngaged.setText(QCoreApplication.translate("Dialog", "停止运行", None))
             if not filtering:
-                self.actionToggleFiltering.setText("开启Vimouse")
+                self.actionToggleFiltering.setText(QCoreApplication.translate("Dialog", "开启Vimouse", None))
                 self.actionToggleFiltering.setDisabled(False)
                 self.setIcon(self.iconEngaged)
             else:
-                self.actionToggleFiltering.setText("关闭Vimouse")
+                self.actionToggleFiltering.setText(QCoreApplication.translate("Dialog", "关闭Vimouse", None))
                 self.actionToggleFiltering.setDisabled(False)
                 self.setIcon(self.iconFiltering)
         else:
-            self.actionToggleEngaged.setText("启动运行")
+            self.actionToggleEngaged.setText(QCoreApplication.translate("Dialog", "启动运行", None))
             self.actionToggleFiltering.setDisabled(True)
             self.setIcon(self.iconStoped)
         
@@ -294,18 +294,18 @@ hr { height: 1px; border-width: 0; }\n
         self.filtering = filtering
         if engaged:
             self.pushButton.setText(QCoreApplication.translate("Dialog", "已 启 动", None))
-            self.tray.actionToggleEngaged.setText("停止运行")
+            self.tray.actionToggleEngaged.setText(QCoreApplication.translate("Dialog", "停止运行", None))
             if not filtering:
-                self.tray.actionToggleFiltering.setText("开启Vimouse")
+                self.tray.actionToggleFiltering.setText(QCoreApplication.translate("Dialog", "开启Vimouse", None))
                 self.tray.actionToggleFiltering.setDisabled(False)
                 self.tray.setIcon(self.tray.iconEngaged)
             else:
-                self.tray.actionToggleFiltering.setText("关闭Vimouse")
+                self.tray.actionToggleFiltering.setText(QCoreApplication.translate("Dialog", "关闭Vimouse", None))
                 self.tray.actionToggleFiltering.setDisabled(False)
                 self.tray.setIcon(self.tray.iconFiltering)
         else:
             self.pushButton.setText(QCoreApplication.translate("Dialog", "启 动", None))
-            self.tray.actionToggleEngaged.setText("启动运行")
+            self.tray.actionToggleEngaged.setText(QCoreApplication.translate("Dialog", "启动运行", None))
             self.tray.actionToggleFiltering.setDisabled(True)
             self.tray.setIcon(self.tray.iconStoped)
 
